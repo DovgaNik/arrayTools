@@ -54,4 +54,20 @@ public class deleteItem {
         
         return tempArr; //Returning temporary array
     }
+    char[] removeElement(char[] arr, int index){ //Function that deletes item from array by index (returns array with deleted item)
+        if (arr == null || index < 0 || index >= arr.length) { //Check if the array and the index are valid for deleting
+            return arr; 
+        }
+        
+        char[] tempArr = new char[arr.length - 1];  //Create new temporary array
+        
+        for (int i = 0, k = 0; i < arr.length; i++) { //Copying items to the temporary array
+            if (i == index) {
+                continue; 
+            } 
+            tempArr[k++] = arr[i]; 
+        }
+        
+        return tempArr; //Returning temporary array
+    }
 }
