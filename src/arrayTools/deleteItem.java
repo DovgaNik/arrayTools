@@ -6,7 +6,7 @@
 package arrayTools;
 
 public class deleteItem {
-    String[] removeElement(String[] arr, int index){ //Function that deletes item from array by index (returns array with deleted item)
+    public String[] removeElement(String[] arr, int index){ //Function that deletes item from array by index (returns array with deleted item)
         if (arr == null || index < 0 || index >= arr.length) { //Check if the array and the index are valid for deleting
             return arr; 
         }
@@ -22,7 +22,7 @@ public class deleteItem {
         
         return tempArr; //Returning temporary array
     }
-    int[] removeElement(int[] arr, int index){ //Function that deletes item from array by index (returns array with deleted item)
+    public int[] removeElement(int[] arr, int index){ //Function that deletes item from array by index (returns array with deleted item)
         if (arr == null || index < 0 || index >= arr.length) { //Check if the array and the index are valid for deleting
             return arr; 
         }
@@ -38,7 +38,7 @@ public class deleteItem {
         
         return tempArr; //Returning temporary array
     }
-    float[] removeElement(float[] arr, int index){ //Function that deletes item from array by index (returns array with deleted item)
+    public float[] removeElement(float[] arr, int index){ //Function that deletes item from array by index (returns array with deleted item)
         if (arr == null || index < 0 || index >= arr.length) { //Check if the array and the index are valid for deleting
             return arr; 
         }
@@ -54,7 +54,7 @@ public class deleteItem {
         
         return tempArr; //Returning temporary array
     }
-    char[] removeElement(char[] arr, int index){ //Function that deletes item from array by index (returns array with deleted item)
+    public char[] removeElement(char[] arr, int index){ //Function that deletes item from array by index (returns array with deleted item)
         if (arr == null || index < 0 || index >= arr.length) { //Check if the array and the index are valid for deleting
             return arr; 
         }
